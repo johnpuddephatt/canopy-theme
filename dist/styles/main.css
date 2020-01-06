@@ -707,15 +707,6 @@ body.menu-open {
 
 .footer-logos {
   margin: 1.5rem 0; }
-  @media screen and (min-width: 1200px) {
-    .footer-logos {
-      float: left;
-      display: block;
-      margin-right: 2.09991%;
-      width: 65.9667%;
-      margin-left: 17.01665%; }
-      .footer-logos:last-child {
-        margin-right: 0; } }
 
 .footer-logo-wha {
   width: 30%;

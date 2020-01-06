@@ -40,10 +40,6 @@
 }
 
 .footer-logos {
-  @include media($large-screen) {
-    @include span-columns(8);
-    @include shift(2);
-  }
   margin: $base-spacing 0;
 }
 .footer-logo-wha {
