@@ -1,0 +1,115 @@
+.site-footer {
+  text-align: center;
+  @include clearfix;
+  padding: 2 * $base-spacing 0;
+  color: white;
+  background-color: $orange;
+  body.home & {
+    animation: backgroundslide 20s infinite;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.footer-inner {
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.footer-title {
+  font-size: modular-scale(4);
+  text-transform: lowercase;
+  position: relative;
+  margin-bottom: $base-spacing;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 3 * $base-spacing;
+    height: 4.5 * $base-spacing;
+    margin: -$base-spacing $small-spacing -$small-spacing;
+    background-image: url('../images/canopy-logo-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer-notice {
+  @include span-columns(12);
+  font-size: modular-scale(-1);
+}
+
+.footer-logos {
+  @include media($large-screen) {
+    @include span-columns(6);
+    @include shift(3);
+  }
+margin: $base-spacing 0;
+
+}
+.footer-logo-wha {
+  width: 30%;
+  padding: 0 $small-spacing;
+}
+
+.footer-logo-un {
+  width: 50%;
+  padding: $small-spacing $small-spacing $base-spacing;
+}
+
+
+
+.footer-nav {
+  @include span-columns(8);
+  @include shift(2);
+  padding: 0;
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    margin: 0 $small-spacing
+  }
+
+  a {
+    color: white;
+    &:hover:before {
+        display: block;
+        background-color: white;
+        height: $small-spacing/4;
+        margin-top: -$small-spacing/4;
+        width: 100%;
+        content: '';
+      }
+  }
+
+}
+
+
+.social-navigation {
+  margin: 0 auto;
+  padding-top: $base-spacing;
+  clear: both;
+  text-align: center;
+  li {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    line-height: 1;
+    margin-left: $small-spacing/2;
+  }
+
+}
+.social-icon {
+  svg {
+    width: 1.5 * $base-spacing;
+    height: 1.5 * $base-spacing;
+    padding: .25 * $small-spacing;
+    background-color: white;
+    fill: $gray;
+    border-radius: 50%;
+    body.home & {
+      animation: fillslide 20s infinite;
+    }
+  }
+}

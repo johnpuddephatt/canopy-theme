@@ -1,0 +1,52 @@
+
+@keyframes backgroundslide {
+  0%,20%,100% {
+      background-color: $orange;
+  }
+  25%,45% {
+      background-color: $green;
+  }
+  50%,70% {
+      background-color: $blue;
+  }
+  75%,95% {
+      background-color: $teal;
+  }
+}
+
+@keyframes imageslider {
+  0%, 15% {
+    background-image: url('../images/donate1.jpg')
+  }
+  20%, 35% {
+    background-image: url('../images/donate2.jpg')
+  }
+  40%, 55% {
+    background-image: url('../images/donate3.jpg')
+  }
+  60%, 95% {
+    background-image: url('../images/donate4.jpg')
+  }
+}
+
+@keyframes blink{
+    0% { opacity:.75; }
+    50% { opacity:0; }
+    100% { opacity:.75; }
+}
+
+
+@keyframes fillslide {
+  0%,20%,100% {
+      fill: $orange;
+  }
+  25%,45% {
+      fill: $green;
+  }
+  50%,70% {
+      fill: $blue;
+  }
+  75%,95% {
+      fill: $teal;
+  }
+}

@@ -1,0 +1,67 @@
+.canopypopup-container {
+  background-color: #fff;
+  position: fixed;
+  bottom: $base-spacing;
+  right: $base-spacing;
+  left: $base-spacing;
+  @include media($medium-screen) {
+    left: auto;
+    width: 45%;
+  }
+  @include media($large-screen) {
+    width: 25%;
+  }
+
+  opacity: 1;
+  border-radius: $small-spacing/2;
+  border: 2px solid $light-gray;
+  padding: $base-spacing $small-spacing;
+  text-align: center;
+  animation: fadeIn 8 * $base-duration;
+  p {
+    font-size: modular-scale(-1);
+  }
+  &.closed {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY($base-spacing);
+    transition: opacity 2 * $base-duration, transform 2 * $base-duration;
+    animation: none;
+  }
+  .close {
+    position: absolute;
+    top: $small-spacing/2;
+    right: $small-spacing/2;
+    color: white;
+    font-size: modular-scale(1);
+    background-color: $light-gray;
+    border-radius: 50%;
+    cursor: pointer;
+    height: $base-spacing;
+    width: $base-spacing;
+    line-height: 1.15 * $base-spacing;
+    transition: background-color $base-duration;
+    &:hover {
+      background-color: $medium-gray;
+    }
+
+  }
+}
+
+@keyframes fadeIn {
+  0%, 75% {
+    opacity: 0;
+    transform: translateY($base-spacing);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  75%, 100% {
+    opacity: 0;
+    transform: translateY($base-spacing);
+  }
+}

@@ -1,0 +1,122 @@
+.primary-navigation {
+  body.home & {
+    animation: backgroundslide 20s infinite;
+  }
+  padding: $small-spacing;
+  position: absolute;
+  text-transform: lowercase;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  @include media($medium-screen) {
+    padding: $base-spacing $small-spacing;
+  }
+  @include media($large-screen) {
+    padding: $base-spacing 0;
+  }
+  a {
+    display: block;
+    color: white;
+    font-size: modular-scale(-1);
+    line-height: $base-spacing;
+    height: $base-spacing;
+  }
+
+}
+
+
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  float: left;
+  padding: 0 $small-spacing;
+  color: white;
+  font-size: modular-scale(3);
+  @include media($large-screen) {
+    display: none;
+  }
+  &:after {
+    content: 'Canopy';
+    font-family: $base-font-family, Arial;
+    text-transform: lowercase;
+    font-size: modular-scale(-1);
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+    margin-left: $small-spacing;
+    transform: translate(-3px,-4px);
+  }
+}
+
+.site-title {
+  color: white;
+  line-height: 0;
+  margin-bottom: $base-spacing;
+  display: none;
+  @include media($large-screen) {
+    margin-bottom: 0;
+    display: block;
+  }
+  font-size: modular-scale(3);
+  margin-right: 1.5 * $base-spacing;
+  text-align: left;
+  float: left;
+}
+
+.nav-left {
+  width: 340px;
+  padding: 2 * $base-spacing $base-spacing;
+  background-color: gray;
+  top: 0;
+  height: 100vh;
+  right: 100%;
+  position: absolute;
+  z-index: 999;
+  li {
+    line-height: 2 * $base-spacing;
+  }
+  @include media($large-screen) {
+    width: auto;
+    height: auto;
+    position: static;
+    padding: 0;
+    background-color: transparent;
+    float: left;
+    li {
+      float: left;
+      line-height: $base-spacing;
+      margin-right: 1.5 * $base-spacing;
+    }
+    a {
+      &:hover:before {
+          display: block;
+          background-color: white;
+          height: $small-spacing/4;
+          margin-top: -$small-spacing/4;
+          width: 100%;
+          content: '';
+        }
+    }
+  }
+
+}
+
+.navigation-button {
+  border: 2px solid white;
+  background-color: transparent;
+  padding-top: $small-spacing/2;
+  padding-bottom: $small-spacing/2;
+  margin-top: -$small-spacing/2;
+  margin-bottom: -$small-spacing/2;
+  height: 1.5 * $base-spacing !important;
+  &:hover {
+    background-color: rgba(200,200,200,.2);
+  }
+}
+
+.nav-right {
+  float: right;
+}

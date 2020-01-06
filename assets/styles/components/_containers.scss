@@ -1,0 +1,56 @@
+html {
+  margin-top: 2 * $base-spacing !important;
+  @include media($medium-screen) {
+    margin-top: 3 * $base-spacing !important;
+  }
+}
+
+#wpadminbar {
+  left: calc(100% - 20px) !important;
+  transition: left 200ms;
+  &:hover {
+    left: 0;
+  }
+}
+
+body.menu-open {
+  overflow-y: hidden;
+  .page-wrapper, .primary-navigation {
+    transform: translateX(340px);
+    @include media($large-screen) {
+      transform: translateX(0);
+    }
+  }
+  &:after {
+    content: '';
+    top: 0;
+    height: 200vh;
+    left: 0;
+    right: 0;
+    background-color: rgba(50,50,50,0.7);
+    z-index: 9;
+    display: block;
+    position: absolute;
+  }
+}
+
+.page-wrapper, .primary-navigation {
+  transition: transform $base-duration;
+}
+
+.wrapper {
+  @include outer-container;
+  padding: 0;
+}
+
+.thin-inner {
+  padding: $base-spacing 0;
+  @include media($large-screen) {
+    @include span-columns(10);
+    @include shift(1);
+    padding: 4 * $base-spacing $base-spacing 3 * $base-spacing;
+  }
+  p {
+    font-weight: 700;
+  }
+}
