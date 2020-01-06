@@ -40,20 +40,20 @@
 }
 
 .footer-logos {
-  margin: $base-spacing 0;
+  margin: 1.5 * $base-spacing 0 2 * $base-spacing;
 }
 .footer-logo-wha {
-  width: 30%;
+  width: 15%;
   padding: 0 $small-spacing;
 }
 
 .footer-logo-un {
-  width: 40%;
+  width: 25%;
   padding: $small-spacing $small-spacing $base-spacing;
 }
 
 .footer-logo-esif {
-  width: 30%;
+  width: 15%;
   padding: 0 $small-spacing;
 }
 

@@ -706,18 +706,18 @@ body.menu-open {
     margin-right: 0; }
 
 .footer-logos {
-  margin: 1.5rem 0; }
+  margin: 2.25rem 0 3rem; }
 
 .footer-logo-wha {
-  width: 30%;
+  width: 15%;
   padding: 0 0.75rem; }
 
 .footer-logo-un {
-  width: 40%;
+  width: 25%;
   padding: 0.75rem 0.75rem 1.5rem; }
 
 .footer-logo-esif {
-  width: 30%;
+  width: 15%;
   padding: 0 0.75rem; }
 
 .footer-nav {
