@@ -45,21 +45,19 @@
     @include shift(2);
   }
   margin: $base-spacing 0;
-  display: flex;
-  flex-direction: row;
 }
 .footer-logo-wha {
-  flex: 1 1 30%;
+  width: 30%;
   padding: 0 $small-spacing;
 }
 
 .footer-logo-un {
-  flex: 1 1 40%;
+  width: 40%;
   padding: $small-spacing $small-spacing $base-spacing;
 }
 
 .footer-logo-esif {
-  flex: 1 1 30%;
+  width: 30%;
   padding: 0 $small-spacing;
 }
 
