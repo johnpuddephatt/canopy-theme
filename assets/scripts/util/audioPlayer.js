@@ -61,6 +61,7 @@
           }
           else {
             setupWebAudio();
+            draw();
             interviewPlayer.currentTime= 0;
             interviewPlayer.src = e.target.dataset.interview;
             interviewPlayer.play();
@@ -85,12 +86,12 @@
 
 
 
-      window.addEventListener('load', init, false);
+      // window.addEventListener('load', init, false);
 
-      function init() {
-        setupWebAudio();
-        draw();
-      }
+      // function init() {
+      //   setupWebAudio();
+      //   draw();
+      // }
 
       function setupWebAudio() {
         window.AudioContext = window.AudioContext||window.webkitAudioContext;
