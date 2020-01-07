@@ -10,9 +10,9 @@
   <div class="wrapper">
     <div class="case-image-wrapper">
       <div class="case-image-inner">
-        <div class="case-image case-image-one" data-interview="@asset('/images/audio/daniel-1.mp3')"></div>
-        <div class="case-image case-image-two" data-interview="@asset('/images/audio/daniel-2.mp3')"></div>
-        <div class="case-image case-image-three" data-interview="@asset('/images/audio/daniel-3.mp3')"></div>
+        <div class="case-image case-image-one" data-interview="@asset('images/audio/daniel-1.mp3')"></div>
+        <div class="case-image case-image-two" data-interview="@asset('images/audio/daniel-2.mp3')"></div>
+        <div class="case-image case-image-three" data-interview="@asset('images/audio/daniel-3.mp3')"></div>
       </div>
     </div>
     <div class="case-intro">
