@@ -44,6 +44,7 @@
   img {
     display: block;
     margin: $base-spacing auto;
+    width: 5 * $base-spacing;
     @include media($medium-screen) {
       display: inline-block;
       margin: 0;
@@ -52,18 +53,24 @@
 }
 
 .footer-logo-wha {
-  width: 15%;
-  padding: 0 $base-spacing;
+  @include media($medium-screen) {
+    width: 15%;
+    padding: 0 $base-spacing;
+  }
 }
 
 .footer-logo-un {
-  width: 25%;
-  padding: $small-spacing $base-spacing $base-spacing;
+  @include media($medium-screen) {
+    width: 25%;
+    padding: $small-spacing $base-spacing $base-spacing;
+  }
 }
 
 .footer-logo-esif {
-  width: 17.5%;
-  padding: 0 $base-spacing;
+  @include media($medium-screen) {
+    width: 17.5%;
+    padding: 0 $base-spacing;
+  }
 }
 
 
