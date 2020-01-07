@@ -37,6 +37,7 @@
 .footer-notice {
   @include span-columns(12);
   font-size: modular-scale(-1);
+  margin-top: $base-spacing;
 }
 
 .footer-logos {

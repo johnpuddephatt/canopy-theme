@@ -9,7 +9,7 @@
   right: 0;
   top: 0;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   @include media($medium-screen) {
     padding: $base-spacing $small-spacing;
   }
