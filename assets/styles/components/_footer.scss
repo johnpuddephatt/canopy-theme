@@ -52,21 +52,21 @@
   }
   .footer-logo-wha {
     @include media($medium-screen) {
-      width: 15%;
+      width: 20%;
       padding: 0 $base-spacing;
     }
   }
 
   .footer-logo-un {
     @include media($medium-screen) {
-      width: 25%;
+      width: 30%;
       padding: $small-spacing $base-spacing $base-spacing;
     }
   }
 
   .footer-logo-esif {
     @include media($medium-screen) {
-      width: 17.5%;
+      width: 20%;
       padding: 0 $base-spacing;
     }
   }
