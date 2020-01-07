@@ -41,20 +41,29 @@
 
 .footer-logos {
   margin: 1.5 * $base-spacing 0 2 * $base-spacing;
+  img {
+    display: block;
+    margin: $base-spacing auto;
+    @include media($medium-screen) {
+      display: inline-block;
+      margin: 0;
+    }
+  }
 }
+
 .footer-logo-wha {
   width: 15%;
-  padding: 0 $small-spacing;
+  padding: 0 $base-spacing;
 }
 
 .footer-logo-un {
   width: 25%;
-  padding: $small-spacing $small-spacing $base-spacing;
+  padding: $small-spacing $base-spacing $base-spacing;
 }
 
 .footer-logo-esif {
   width: 15%;
-  padding: 0 $small-spacing;
+  padding: 0 $base-spacing;
 }
 
 
