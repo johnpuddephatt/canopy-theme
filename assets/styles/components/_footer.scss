@@ -50,30 +50,27 @@
       margin: 0;
     }
   }
-}
+  .footer-logo-wha {
+    @include media($medium-screen) {
+      width: 15%;
+      padding: 0 $base-spacing;
+    }
+  }
 
-.footer-logo-wha {
-  @include media($medium-screen) {
-    width: 15%;
-    padding: 0 $base-spacing;
+  .footer-logo-un {
+    @include media($medium-screen) {
+      width: 25%;
+      padding: $small-spacing $base-spacing $base-spacing;
+    }
+  }
+
+  .footer-logo-esif {
+    @include media($medium-screen) {
+      width: 17.5%;
+      padding: 0 $base-spacing;
+    }
   }
 }
-
-.footer-logo-un {
-  @include media($medium-screen) {
-    width: 25%;
-    padding: $small-spacing $base-spacing $base-spacing;
-  }
-}
-
-.footer-logo-esif {
-  @include media($medium-screen) {
-    width: 17.5%;
-    padding: 0 $base-spacing;
-  }
-}
-
-
 
 .footer-nav {
   @include span-columns(8);
