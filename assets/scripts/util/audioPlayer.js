@@ -83,8 +83,7 @@
        *
        */
 
-      window.AudioContext = window.AudioContext||window.webkitAudioContext;
-      var audioContext = new AudioContext();
+
 
       window.addEventListener('load', init, false);
 
@@ -94,6 +93,8 @@
       }
 
       function setupWebAudio() {
+        window.AudioContext = window.AudioContext||window.webkitAudioContext;
+        var audioContext = new AudioContext();
         if (source) source.disconnect();
         if (interviewPlayer) interviewPlayer.remove();
         interviewPlayer = new Audio();
