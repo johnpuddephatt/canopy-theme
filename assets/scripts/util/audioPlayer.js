@@ -53,8 +53,10 @@
 
       function playButtonHandler(e) {
         if (e.target !== e.currentTarget ) {
-          interviewPlayer.pause();
-          interviewPlayer.remove();
+          if (interviewPlayer) {
+            interviewPlayer.pause();
+            interviewPlayer.remove();
+          }
           if (e.target.classList.contains('playing')) {
             e.target.classList.remove('playing');
             e.target.removeChild(barStrip);

@@ -4,7 +4,7 @@
     <div class="footer-logos">
       <img src="@asset('images/WHA-logo.png')" alt="World Habitat Awards" class="footer-logo footer-logo-wha" />
       <img src="@asset('images/un-habitat-logo.png')" alt="UN Habitat" class="footer-logo footer-logo-un" />
-      <img src="@asset('images/ESIF-logo.png')" alt="European Structural and Investment Fund logo" class="footer-logo footer-logo-esif" />
+      <img src="@asset('images/ESIF-logo-2.png')" alt="European Structural and Investment Fund logo" class="footer-logo footer-logo-esif" />
     </div>
     <nav class="footer-nav">
       @if (has_nav_menu('secondary_navigation'))
