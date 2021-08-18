@@ -17,7 +17,7 @@
       <label><input type="checkbox" value="monthly" name="monthly" class="monthly-check"/>make it monthly</label> --}}
       {{-- <input type="submit" value="Donate" class="donation-submit"/> --}}
       {{-- <p class="small">You’ll be taken to localgiving.org to complete your donation.</p> --}}
-      <a href="/donate" class="button">Donate</a>
+      <a href="/donate-now" class="button">Donate</a>
 
     </div>
   </div>
