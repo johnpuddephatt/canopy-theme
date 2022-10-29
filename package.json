@@ -32,7 +32,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "body-parser": "^1.18.2",
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.27.10",
     "buble": "^0.14.3",
     "buble-loader": "^0.3.2",
     "clean-webpack-plugin": "^0.1.19",
